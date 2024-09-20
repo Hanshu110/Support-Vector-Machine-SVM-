@@ -1,0 +1,6 @@
+I have uploaded two python files.
+
+1. svm_plant_classifier_graphical.py - which gives output as a graphical form.
+2. svm_plant_classifier.py - which gives output as a non graphical form(normal output as a table).
+
+you can run either of the as per your wish. 😃
