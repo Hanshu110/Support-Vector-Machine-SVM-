@@ -23,19 +23,20 @@ pip install opencv-python scikit-learn numpy matplotlib seaborn
 #### Running the Project
 
 1. **Prepare the Dataset**:
-   - Create two directories:
+   - Create three directories:
      - `healthy_plants`: Contains images of healthy plants.
      - `diseased_plants`: Contains images of diseased plants.
+     - `input_images`: Contains the image of input plants.
    - Ensure each directory has a sufficient number of images for training and testing.
 
 2. **Update the Script**:
-   - Modify the `healthy_image_folder` and `diseased_image_folder` variables in the script to point to your dataset directories.
+   - Modify the `healthy_image_folder`, `diseased_image_folder` and `input_images` variables in the script to point to your dataset directories.
 
 3. **Execute the Script**:
    - Run the Python script:
 
      ```bash
-     python svm_plant_classifier.py
+     python svm_plant_prediction.py
      ```
 
    - The script will:
@@ -44,10 +45,10 @@ pip install opencv-python scikit-learn numpy matplotlib seaborn
      - Split the data into training and testing sets.
      - Train the SVM classifier.
      - Evaluate the model's performance.
-     - Display a confusion matrix and ROC curve.
+     - Display a confusion matrix and ROC curve with health condition of the plant(healthy / diseased).
 
 #### Understanding SVM
 
 Support Vector Machines (SVMs) are supervised learning models used for classification and regression tasks. They work by finding the optimal hyperplane that separates data points of different classes in a high-dimensional space. SVMs are effective in high-dimensional spaces and are widely used for classification tasks due to their ability to model complex relationships citeturn0search13.
 
-In this project, SVMs are utilized to classify plant images into healthy or diseased categories based on extracted image features.
+In this project, SVMs are utilized to classify plant images into healthy or diseased categories based on extracted image features and predicts the condition of the plant.
